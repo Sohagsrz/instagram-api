@@ -1,16 +1,4 @@
 from sanic import Sanic
-from sanic.response import json
-app = Sanic()
-
-
-@app.route('/')
-async def index(request):
-    return json({'hello': 'world'})
-@app.route('/<path:path>')
-async def index(request, path=""):
-    return json({'hello': path})
-
-from sanic import Sanic
 from sanic import response
 import aiohttp
 import asyncio
@@ -84,4 +72,3 @@ async def handle_request(request):
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8006)
- 
