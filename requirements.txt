@@ -1,4 +1,3 @@
 sanic==19.6.0
 instaloader==4.11
 aiohttp==2.3.3
-asyncio==3.4.3
